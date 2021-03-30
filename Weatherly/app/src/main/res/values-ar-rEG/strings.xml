@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weatherly</string>
+    <string-array name="units_array">
+        <item>امبريالية</item>
+        <item>مترية</item>
+        <item>اساسية</item>
+    </string-array>
+    <string-array name="wind_units_array">
+        <item>م/ث</item>
+        <item>ميل/ساعة</item>
+    </string-array>
+    <string-array name="language_array">
+        <item>عربي</item>
+        <item>الإنجليزية</item>
+    </string-array>
+    <string name="rain">مطر</string>
+    <string name="temp">درجة الحرارة</string>
+    <string name="wind">رياح</string>
+    <string name="fog">ضباب</string>
+    <string name="snow">ثلج</string>
+    <string name="cloudiness">غيوم</string>
+    <string name="thunderstorm">عاصفة رعدية</string>
+    <string name="empty">نوع الانذار</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="weekend">يرجى اختيار يوم واحد على الأقل</string>
+    <string name="alertType">يرجى اختيار نوع التنبيه</string>
+    <string name="time">يرجى الاختيار من وإلى وقت</string>
+    <string name="threshold">يرجى إدخال القيمة الحدية</string>
+    <string name="alarmOff">تم إيقاف التنبيه</string>
+    <string name="alarmOn">المنبه مفعل</string>
+    <string name="checkEvent">تحقق من الحدث في</string>
+    <string name="hour24">24 ساعة</string>
+    <string name="hour48">48 ساعة</string>
+    <string name="hour72">72 ساعة</string>
+    <string name="hello_world">Hello Square World!</string>
+    <string name="add_alarm">أضف منبه</string>
+    <string name="min">الحد الأدنى</string>
+    <string name="max">أقصى</string>
+    <string name="add">اضافة</string>
+    <string name="day_forecast">نشرة 24 ساعة</string>
+    <string name="week_forecast">نشرة 7 أيام</string>
+    <string name="favorite">المفضلة</string>
+    <string name="settings">إعدادات</string>
+    <string name="temperature_unit">وحدات درجة الحرارة:</string>
+    <string name="language">لغة :</string>
+    <string name="weather_alert">تنبيهات الطقس</string>
+    <string-array name="alertTypes">
+        <item>@string/empty</item>
+        <item>@string/rain</item>
+        <item>@string/temp</item>
+        <item>@string/wind</item>
+        <item>@string/fog</item>
+        <item>@string/snow</item>
+        <item>@string/cloudiness</item>
+        <item>@string/thunderstorm</item>
+    </string-array>
+
+</resources>

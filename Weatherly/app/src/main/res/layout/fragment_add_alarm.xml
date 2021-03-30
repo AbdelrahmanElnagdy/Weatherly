@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.AddAlarmFragment"
+    android:background="@drawable/card_view_layout">
+
+    <TextView
+        android:id="@+id/addAlarmHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/add_alarm"
+        android:textAlignment="center"
+        android:textColor="	#ccff66"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ca.antonious.materialdaypicker.MaterialDayPicker
+        android:id="@+id/day_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addAlarmHeader"
+        android:layout_marginTop="32dp"
+        />
+
+     <Spinner
+        android:id="@+id/nice_spinner"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day_picker"
+        android:background="@drawable/favorite_item_layout"
+        android:textColor="@color/neon_green"
+        android:popupBackground="@color/ocean_blue"
+         />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nice_spinner"
+        android:visibility="gone">
+
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupMaxMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/day_picker"
+        app:layout_constraintVertical_bias="0.06"
+        app:layout_constraintHorizontal_bias="0.8">
+
+        <RadioButton
+            android:id="@+id/minRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/neon_green"
+            android:checked="true"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/min"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/maxRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/neon_green"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/max"
+            android:textColor="@color/white" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/valueET"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="threshold"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="false"
+        android:visibility="gone"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="@id/nice_spinner"
+        app:layout_constraintEnd_toEndOf="@id/nice_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/nice_spinner"
+        app:layout_constraintVertical_bias="0.167"
+        tools:visibility="visible"
+        android:background="@drawable/fab_layot"
+        android:textColorHint="@color/white"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/neon_green"
+        android:fontFamily="@font/montserrat2"
+        />
+
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/rouded_button"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/add"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/valueET" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

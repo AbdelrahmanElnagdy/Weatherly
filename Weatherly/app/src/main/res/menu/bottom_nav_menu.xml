@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/botton_nav_setting"
+        android:title="Settings"
+        android:icon="@drawable/settings_icon"
+
+        />
+    <item
+        android:id="@+id/botton_nav_home"
+        android:title="Home"
+        android:icon="@drawable/home_icon"
+        />
+    <item
+        android:id="@+id/botton_nav_weather"
+        android:title="Weather"
+        android:icon="@drawable/weather_icon"
+
+        />
+    <item
+        android:id="@+id/botton_nav_favorite"
+        android:title="Favorites"
+        android:icon="@drawable/heart"
+        />
+
+    <!--        app:cnb_backgroundColor="@color/app_middle"-->
+</menu>
